@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Arena</title>
+
+    <!-- bootstrap -->
+     <!-- css -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <!-- js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+      <link rel="icon" type="image/png" href="./images/nexuslogo.png">
+
+    <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Black Ops One", system-ui;
+    }
+ </style>
+</head>
+<body class="bg-dark">
+    <!-- header -->
+     <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img height="50px" width="50px" src=".//images/nexuslogo.png" alt="nexuslogo" width="30" height="24">
+    </a>
+    <a class="navbar-brand text-light" href="#">Nexus Arena</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active  text-light" aria-current="page" href="#">Home</a>
+        </li>
+        
+       
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Games
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item  text-light" href="#">PC Games</a></li>
+            <li><a class="dropdown-item  text-light" href="#">PlayStation Games</a></li>
+            <li><a class="dropdown-item  text-light" href="#">Xbox Games</a></li>
+            <li><a class="dropdown-item  text-light" href="#">Nintendo Games</a></li>
+            <li><a class="dropdown-item  text-light" href="#feat">New Releases</a></li>
+          </ul>
+        </li>
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Consoles
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item  text-light" href="#conso"> PlayStation 5</a></li>
+            <li><a class="dropdown-item  text-light" href="#conso">Xbox Series X</a></li>
+            <li><a class="dropdown-item  text-light" href="#conso">Nintendo Switch</a></li>
+            <li><a class="dropdown-item  text-light" href="#conso">Steam Deck</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Accessories
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item  text-light" href="#">Keyboards</a></li>
+            <li><a class="dropdown-item  text-light" href="#">Mouse</a></li>
+            <li><a class="dropdown-item  text-light" href="#">Headsets</a></li>
+            <li><a class="dropdown-item  text-light" href="#">Controllers</a></li>
+            <li><a class="dropdown-item  text-light" href="#">Gaming Chairs</a></li>
+            <li><a class="dropdown-item  text-light" href="#acc1">New Releases</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link  text-light" href="#deal">Deals</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  text-light" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  text-light" href="#foot">Contact</a>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        
+      </form>
+      <!-- <button type="button" class="btn btn-outline-primary">Join Now</button> -->
+    </div>
+    
+  </div>
+ 
+</nav>
+
+
+<!-- banner -->
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height="600px" src="https://images.openai.com/static-rsc-4/6GAcnnVhbnp4t3PwnYC2oyKDlycTWunwpv9vFVFTqncLl-i9APfMfvHmIiaVony5suI8y8G7WolZbUKpV86Am2yCXcK0isYKmZKA2iBADbtKOGtPVqlcT_29YYTNrACcnjLwhybiLTF93E-mFUcb8ikPyZZYlyHx3WY6h7gt1R9piRzH-2UieXLK25-_D1Mu?purpose=fullsize" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img height="600px" src="https://images.openai.com/static-rsc-4/extied_wMirRkC-zb27V64EUUk9TAtMjCo3l4P7XBlqHAh6RaE1jBJZ0UYxk0rvkLerwWl0yrNPeE9a-wQ_Lk3gvf_Y7CyeQSiAu0YEaGbzh2SwSxGF9g4YIunnhysFQc2HRwjYvYvCm9Gm0VSE5HX7lq48_XmkDGhT1MEC7gB2i7LoVXPgxYEXw6xn_7haM?purpose=fullsize" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img height="600px" src="https://images.openai.com/static-rsc-4/Zd0w4NSYPsYLyKlifsO9QI54EWX7dM1BX12fiLjFvgwxMBSjaUcAFI8LE7pxJLv07xpnVxLKWoa2jc-wzY_7amA1IJWkJXRZMLV3NtUtjzZn5NTdRfGEejUL_yGBkx783n_sLjqDhWv1pdyQ-7_VJz4jCDdJmXpbJ6VzZK-3rzT9W7BfTqiqTJZmsRjSKT22?purpose=fullsize" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+  
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-light">
+   
+                <h1 class="display-2 fw-bold ">NEXUS ARENA</h1>
+                <h4>Level Up Your Gaming</h4>          
+<div>
+    <div class="card text-center mx-auto" style="width: 38rem;">
+  <div class="card-body">
+    <p class="card-text text-center">Discover the latest games, next-generation consoles, and premium gaming accessories—all in one place. Whether you're a casual player or a competitive gamer, Nexus Arena has everything you need to elevate your gaming experience.</p>
+  </div>
+</div>
+  
+  <!-- some issue here with button -->
+<div class="p-3">
+                <button type="button" class="btn btn-primary" href="#">Shop Now</button>
+                <button type="button" class="btn btn-warning" href="#deal">Explore Deals</button>
+                <button type="button" class="btn btn-danger" href="#">Join Now</button>
+                </div>
+                <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+</div>
+            </div>
+</div>
+
+
+<!-- featured games -->
+ <section id="feat">
+ <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-md">
+    <a class="navbar-brand text-warning text-center fs-2" >Featured Games</a>
+    <button type="button" class="btn btn-outline-primary">Explore More</button>
+
+  </div>
+  </nav>
+
+  <div class="bg-dark d-flex justify-content-around">
+    <div class="card bg-secondary" style="width: 18rem;">
+  <img width="100%" height="200px" src="https://livecards.net/i/51296.png?v=0" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title text-info">Valorant</h5>
+    <a href="#" class="btn btn-primary ">Buy Now</a>
+<!-- modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+  Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Valorant</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>⭐ Rating: 4.8/5</p>
+<p>Price: $19.99</p>
+            <p class="card-text ">A tactical 5v5 shooter that combines precise gunplay with unique agent abilities. Teamwork and strategy are the keys to victory.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="card bg-secondary" style="width: 18rem;">
+  <img width="100%" height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7jjX3J5U29robrU3LK6OGbniaxtb0go_EsPo-CIXinDvTcHZfiBYQg&s=10" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title text-info">Counter-Strike 2</h5>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+    <!-- modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+  Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel2">Counter-Strike 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>⭐ Rating: 4.7/5</p>
+<p>Price: $29.99</p>
+    <p class="card-text">Experience intense first-person action where every round demands skill, strategy, and quick reflexes in competitive multiplayer battles.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="card bg-secondary" style="width: 18rem;">
+  <img width="100%" height="200px" src="https://cdn1.epicgames.com/spt-assets/53ec4985296b4facbe3a8d8d019afba9/pubg-battlegrounds-19vwb.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title text-info">PUBG: Battlegrounds</h5>
+    <a href="#" class="btn btn-primary ">Buy Now</a>
+    <!-- modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+  Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">PUBG: Battlegrounds</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>⭐ Rating: 4.6/5</p>
+<p>Price: $24.99</p>
+    <p class="card-text">Drop onto a massive battlefield, gather weapons, and fight to become the last survivor in this iconic battle royale game.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="card bg-secondary" style="width: 18rem;">
+  <img width="100%" height="200px" src="https://4kwallpapers.com/images/wallpapers/call-of-duty-3840x2160-24643.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title text-info">Call of Duty: Warzone</h5>
+    
+    <a href="#" class="btn btn-primary ">Buy Now</a>
+    <!-- modal -->
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+  Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Call of Duty: Warzone</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>⭐ Rating: 4.8/5</p>
+<p>Price: $49.99</p>
+    <p class="card-text">Engage in fast-paced combat across massive maps with realistic weapons, exciting missions, and action-packed battle royale gameplay.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+  </div>
+</section>
+
+  <!-- consoles -->
+   <section id="conso">
+    <nav class="navbar navbar-expand-lg bg-dark p-3">
+  <div class="container-md">
+    <a class="navbar-brand text-warning text-center fs-2" >Consoles</a>
+        <button type="button" class="btn btn-outline-primary">Explore More</button>
+
+  </div>
+  </nav>
+  <div class="bg-dark">
+    
+    <div class="d-flex justify-content-around flex-wrap">
+
+    <div class="card bg-secondary" style="width: 18rem;">
+        <img height="200px" src="https://images.openai.com/static-rsc-4/xNMfju-c0vgnzOl5G9_Oh-CirhDQFGm7M7gy293lyxfQAJNkhLQGFSZEmJ7PpDVIcN8sLlJ7tZmjhEGIwE5HbYpCRSjs1kq8V7g2QKBHSM0bPPWvRO0lcuH_ludbP6NrNpg1n4IDjyDeQLP5CDys0W_-vsrVyb08mxYCrbCIlwnbf5SUhoyUEDJZAJfH25Qz?purpose=fullsize" class="card-img-top" alt="PlayStation 5">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-brands fa-discord" style="color: rgb(177, 151, 252);"></i> PlayStation 5 (PS5)</h5>
+            <p><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> Rating: 4.9/5</p>
+            <p>Price: ₹54,990</p>
+            <p class="card-text">Experience lightning-fast load times, immersive 4K gaming, and exclusive titles powered by Sony's next-generation console.</p>
+            <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card bg-secondary " style="width: 18rem;">
+        <img height="200px" src="https://images.openai.com/static-rsc-4/uj8SUQyKySVLvSzC5G_mTf5M1c6Y9ACJPGniMD3BF5bAYgJCS6cajeV8zY4i5EWjp-PguWctNAjYwAp-K5lxRP1Aif_VMRKDXyDD0WMEBTf-kMvOc7aw87iCCR6q_onFb07EefgMCYEZHbE0Zx9pFZdtW4FDNiHrf7P2kesUrHBWfiVtUNtu7sOnEObk2xB-?purpose=fullsize" class="card-img-top" alt="Xbox Series X">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-brands fa-discord" style="color: rgb(177, 151, 252);"></i> Xbox Series X</h5>
+            <p><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> Rating: 4.8/5</p>
+            <p>Price: ₹52,990</p>
+            <p class="card-text">Enjoy true 4K gaming, Xbox Game Pass access, and high-performance gameplay with Microsoft's most powerful console.</p>
+            <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card bg-secondary" style="width: 18rem;">
+        <img height="200px" src="https://images.openai.com/static-rsc-4/ODaXETeswK9NhCzBS-rl8iGRtVJPpM8ZES-tGn_1r2r1xhPS6kXKX2TyySoBj5KKJ6evnRsincEUFlyXlxLvszwMY8u5jb_He4S7_aXubIBTAfEYclkMNr70iaPAZL6wsZH6k4X1Zr5I95aDkq-twA1OBLQfstBuqOz46y_6gfKOVPHET1avqEXmDNo4sV0P?purpose=fullsize" class="card-img-top" alt="Nintendo Switch OLED">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-brands fa-discord" style="color: rgb(177, 151, 252);"></i> Nintendo Switch OLED</h5>
+            <p><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> Rating: 4.7/5</p>
+            <p>Price: ₹32,990</p>
+            <p class="card-text">Play at home or on the go with a vibrant OLED display and a huge library of family-friendly and adventure games.</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card bg-secondary" style="width: 18rem;">
+        <img height="200px" src="https://images.openai.com/static-rsc-4/PnLyhF7hbNuzKYCpGkzVnfF0gLSZGf4ieRKvT0_wI9vOZYOYdAftVtzm-PtRZotH4n3qsdif9ECHr6C2HpFUcl7UoCczckBKhnXxCBAqW4jqP-BMAOIHPFmn7QYRYqUo7gjGLzwYT6AyZ7Okb3PCTA3mV7wL46LHM03Dfyafg2ksYcksAFnurdKXLk7Z58J_?purpose=fullsize" class="card-img-top" alt="Steam Deck OLED">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-brands fa-discord" style="color: rgb(177, 151, 252);"></i> Steam Deck OLED</h5>
+            <p><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> Rating: 4.8/5</p>
+            <p>Price: ₹54,999</p>
+            <p class="card-text">Carry your PC gaming library anywhere with the powerful handheld gaming device designed for gaming on the move.</p>
+            <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+        </div>
+    </div>
+
+</div>
+
+  </div>
+  </section>
+
+  <section id="acc1">
+    <nav class="navbar navbar-expand-lg bg-dark p-3">
+  <div class="container-md">
+    <a class="navbar-brand text-warning text-center fs-2" >Accessories</a>
+        <button type="button" class="btn btn-outline-primary">Explore More</button>
+
+  </div>
+  </nav>
+    <div class="bg-dark d-flex justify-content-around flex-wrap gap-4">
+
+    <!-- Gaming Keyboard -->
+    <div class="card bg-secondary text-light m-2 border border-5 border-secondary " style="width: 18rem;">
+        <img height="200px" src="https://wallpapersok.com/images/hd/steelseries-gaming-keyboard-aesthetic-sl1wtwrdi9waapzy.jpg" class="card-img-top" alt="Gaming Keyboard">
+        <div class="card-body">
+            <h5 class="card-title">Gaming Keyboard</h5>
+            <p>⭐ Rating: 4.8/5</p>
+            <p>Price: ₹4,999</p>
+            <p class="card-text">
+                Experience responsive mechanical keys, customizable RGB lighting, and ultra-fast actuation for competitive gaming.
+            </p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Gaming Mouse -->
+    <div class="card bg-secondary text-light m-2 border border-5 border-secondary" style="width: 18rem;">
+        <img height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Oz1P2tqFJGKo-gq83M4MujvMDMukoS1KJaJkogNwKX8SOnNVjVdNg4Q&s=10" class="card-img-top" alt="Gaming Mouse">
+        <div class="card-body">
+            <h5 class="card-title">Gaming Mouse</h5>
+            <p>⭐ Rating: 4.7/5</p>
+            <p>Price: ₹2,999</p>
+            <p class="card-text">
+                High-precision optical sensor with adjustable DPI and programmable buttons for maximum control.
+            </p>
+            <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Gaming Headset bg-dark text-light -->
+    <div class="card bg-secondary text-light m-2 border border-5 border-secondary" style="width: 18rem;">
+        <img height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ6PTdtqMQVqCEBYjcYSNSuk6arb3wFiNY8GIgCY6CjEIyfcNg6U43_vA&s=10" class="card-img-top" alt="Gaming Headset">
+        <div class="card-body">
+            <h5 class="card-title">Gaming Headset</h5>
+            <p>⭐ Rating: 4.9/5</p>
+            <p>Price: ₹5,499</p>
+            <p class="card-text">
+                Enjoy immersive surround sound with crystal-clear audio and a noise-cancelling microphone.
+            </p>
+            <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+        </div>
+    </div>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- deals -->
+   <section id="deal">
+    <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-md">
+    <a class="navbar-brand text-danger text-center p-3 fs-2" >Deals</a>
+
+  </div>
+  </nav>
+<div class="d-flex justify-content-around flex-wrap gap-4 bg-dark">
+
+    <!-- Summer Sale -->
+    <div class="card text-center border-5 border-danger" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-fire" style="color: rgb(255, 212, 59);"></i> Summer Sale</h5>
+            <h4 class="text-danger">Up to 50% OFF</h4>
+            <p class="card-text">
+                Grab exciting discounts on games, consoles, and gaming accessories for a limited time.
+            </p>
+            <a href="#" class="btn btn-danger">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- Buy 2 Get 1 -->
+    <div class="card text-center border-5 border-success" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-gift" style="color: rgb(241, 200, 42);"></i> Buy 2 Get 1 Free</h5>
+            <h4 class="text-success">Limited Offer</h4>
+            <p class="card-text">
+                Purchase any two gaming accessories and receive a third item absolutely free.
+            </p>
+            <a href="#" class="btn btn-success">Claim Offer</a>
+        </div>
+    </div>
+
+    <!-- Student Discount -->
+    <div class="card text-center border-5 border-primary" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-graduation-cap" style="color: rgb(44, 43, 39);"></i> Student Discount</h5>
+            <h4 class="text-primary">15% OFF</h4>
+            <p class="card-text">
+                Verify your student ID and enjoy exclusive discounts on selected gaming products.
+            </p>
+            <a href="#" class="btn btn-primary">Get Discount</a>
+        </div>
+    </div>
+
+    <!-- Free Shipping -->
+    <div class="card text-center border-5 border-warning" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-truck" style="color: rgb(255, 212, 59);"></i> Free Shipping</h5>
+            <h4 class="text-warning">Orders Above ₹2,999</h4>
+            <p class="card-text">
+                Enjoy free doorstep delivery on all eligible orders across the country.
+            </p>
+            <a href="#" class="btn btn-warning">Shop Now</a>
+        </div>
+    </div>
+
+</div>
+   </section>
+
+   <!-- why choose us -->
+  <section id="why" class="container my-5">
+
+    <h2 class="text-center mb-5 text-white">Why Choose Nexus Arena?</h2>
+
+    <div class="row text-center">
+
+        <!-- Fast Delivery -->
+        <div class="col-md-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body bg-dark border border-2 border-warning">
+                    <h5 class="card-title text-light">Fast Delivery</h5>
+                    <p class="card-text text-light">
+                        Get your gaming products delivered quickly and safely to your doorstep.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secure Payment -->
+        <div class="col-md-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body bg-dark border border-2 border-danger">
+                    <h5 class="card-title text-light">Secure Payment</h5>
+                    <p class="card-text text-light">
+                        Shop confidently with safe, encrypted, and trusted payment methods.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Collection -->
+        <div class="col-md-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body bg-dark border border-2 border-info">
+                    <h5 class="card-title  text-light">Premium Collection</h5>
+                    <p class="card-text text-light">
+                        Explore the latest games, consoles, and accessories from top brands.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 24/7 Support -->
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 bg-dark border border-2 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title text-light">24/7 Support</h5>
+                    <p class="card-text text-light">
+                        Our dedicated support team is available anytime to assist you.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- customer reviews -->
+ <section class="container my-5">
+
+    <h2 class="text-center mb-5 text-light">Customer Reviews</h2>
+
+    <div class="row justify-content-center">
+
+        <!-- Review 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center text-light">
+                <div class="card-body bg-dark">
+                    <p class="card-text">
+                        "Amazing collection of games and consoles! The ordering process was smooth, and delivery was super fast."
+                    </p>
+                    <h6 class="card-subtitle text-light">- Alex Johnson</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center text-light">
+                <div class="card-body bg-dark">
+                    <p class="card-text">
+                        "I bought a gaming headset and keyboard from Nexus Arena. Great quality and excellent customer support!"
+                    </p>
+                    <h6 class="card-subtitle text-light">- Sarah Williams</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body bg-dark">
+                    <p class="card-text text-light">
+                        "Best gaming store I've visited online. Competitive prices, premium products, and fantastic service."
+                    </p>
+                    <h6 class="card-subtitle m-4  text-light">- David Miller</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- faq -->
+ <section>
+    <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-md">
+    <a class="navbar-brand text-warning text-center fs-3" >FAQ</a>
+
+  </div>
+  </nav>
+<div class="accordion accordion-flush container-md " id="accordionFlushExample">
+
+  <!-- FAQ 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        ? What products are available at Nexus Arena?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Nexus Arena offers a wide range of gaming products, including the latest games, gaming consoles, accessories, keyboards, mice, headsets, controllers, and gaming chairs.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        ? How long does delivery take?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Standard delivery usually takes 3–5 business days. Express delivery is available for selected locations.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        ? Which payment methods do you accept?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        We accept Credit Cards, Debit Cards, UPI, Net Banking, and popular digital wallets for secure and hassle-free payments.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 4 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        ? Can I return or exchange a product?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Yes. Products can be returned or exchanged within 7 days of delivery, provided they are unused and in their original packaging.
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- about us -->
+ <section id="about" class="container my-5">
+
+    <div class="alert alert-dark" role="alert">
+
+        <h4 class="alert-heading">About Nexus Arena</h4>
+
+        <p>
+            Welcome to <strong>Nexus Arena</strong>, your ultimate destination for everything gaming.
+            We offer the latest video games, next-generation consoles, and premium gaming accessories
+            to gamers of all skill levels.
+        </p>
+
+        <hr>
+
+        <p>
+            Our mission is to provide top-quality gaming products at competitive prices with fast
+            delivery, secure payments, and exceptional customer support. Whether you're a casual
+            gamer or a professional esports enthusiast, Nexus Arena has everything you need to
+            level up your gaming experience.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer id="foot" class="text-center text-lg-start bg-dark text-white">
+
+  <!-- Social Media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Follow Nexus Arena on our social platforms:</span>
+    </div>
+
+    <!-- Right -->
+    <div>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Links -->
+  <section>
+    <div class="container text-center text-md-start py-5">
+
+      <div class="row">
+
+        <!-- Company -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gamepad me-3"></i>Nexus Arena
+          </h6>
+
+          <p>
+            Nexus Arena is your ultimate gaming destination, offering the latest
+            games, next-generation consoles, and premium gaming accessories.
+            We are committed to providing an unforgettable gaming experience
+            with quality products, exciting deals, and exceptional customer support.
+          </p>
+
+        </div>
+
+        <!-- Products -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+
+          <p>
+            <a href="#gam" class="text-white text-decoration-none">Featured Games</a>
+          </p>
+
+          <p>
+            <a href="#conso" class="text-white text-decoration-none">Gaming Consoles</a>
+          </p>
+
+          <p>
+            <a href="#acc1" class="text-white text-decoration-none">Accessories</a>
+          </p>
+
+          <p>
+            <a href="#deal" class="text-white text-decoration-none">Special Deals</a>
+          </p>
+
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful Links
+          </h6>
+
+          <p>
+            <a href="#about" class="text-white text-decoration-none">About Us</a>
+          </p>
+
+          <p>
+            <a href="#reviews" class="text-white text-decoration-none">Customer Reviews</a>
+          </p>
+
+          <p>
+            <a href="#faq" class="text-white text-decoration-none">FAQ</a>
+          </p>
+
+          <p>
+            <a href="#contact" class="text-white text-decoration-none">Contact Us</a>
+          </p>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+
+          <p>
+            <i class="fas fa-home me-3"></i>
+            Bengaluru, India
+          </p>
+
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            support@nexus.com
+          </p>
+
+          <p>
+            <i class="fas fa-phone me-3"></i>
+            +91 9876543210
+          </p>
+
+          <p>
+            <i class="fas fa-clock me-3"></i>
+            Mon - Sat : 9:00 AM - 8:00 PM
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gaming Video -->
+  <div class="container p-4">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-6">
+
+        <div class="ratio ratio-16x9">
+
+          <iframe
+            class="shadow rounded"
+            src="https://www.youtube.com/embed/5C_HPTJg5ek"
+            title="Gaming Video"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3 border-top">
+    © 2026 Copyright :
+    <a class="text-white text-decoration-none" href="#">
+      Nexus Arena | Level Up Your Gaming
+    </a>
+  </div>
+
+</footer>
+</body>
+</html>
